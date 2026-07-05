@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Options - Website Highlight Saver</title>
+  <link rel="stylesheet" href="options.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Website Highlight Saver Settings</h1>
+      <p>Configure your extension preferences below.</p>
+    </header>
+
+    <main>
+      <section class="settings-card">
+        <h2>OpenAI API Key</h2>
+        <p class="description">To use the "Summarize" feature, you need an OpenAI API key. Your key is stored locally in your browser and is never sent anywhere except directly to OpenAI's API.</p>
+        
+        <div class="input-group">
+          <label for="api-key">Secret Key</label>
+          <input type="password" id="api-key" placeholder="sk-...">
+        </div>
+        
+        <div class="actions">
+          <button id="save-btn" class="primary-btn">Save Settings</button>
+          <span id="status-msg"></span>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

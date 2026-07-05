@@ -1,0 +1,34 @@
+#highlight-saver-btn {
+  position: absolute;
+  z-index: 2147483647; /* Maximum z-index to appear on top of everything */
+  transform: translateX(-50%);
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+#highlight-saver-btn:hover {
+  background: rgba(30, 41, 59, 0.95);
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+#highlight-saver-btn:active {
+  transform: translateX(-50%) translateY(0);
+}
+
+#highlight-saver-btn.success {
+  background: rgba(16, 185, 129, 0.95);
+  color: white;
+}
